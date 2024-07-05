@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <title>Weather</title>
+  </head>
+  <body>
+    <section class="nav-section">
+      <nav class="container p-5 navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand d-flex justify-content-center align-items-center"
+            href="#"
+          >
+            <img src="./assets/images/logo.png" alt="" />
+            <div class="ms-3 div-logo">
+              <h5 class="m-0 h5-logo">Weather</h5>
+              <p class="m-0 p-logo">tagline goes here</p>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-4 blue-button px-4 nav-items-fontsize">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-4 nav_items-fontsize">
+                <a class="nav-link text-white" href="#">News</a>
+              </li>
+              <li class="nav-item mx-4 nav_items-fontsize">
+                <a class="nav-link text-white" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item mx-4 nav_items-fontsize">
+                <a class="nav-link text-white" href="#">Photos</a>
+              </li>
+              <li class="nav-item mx-4 nav_items-fontsize">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="main vh-75">
+      <div class="container px-5 overflow-auto">
+        <div class="search-container d-flex align-items-center">
+          <input
+          id="search-bar"
+            type="text"
+            
+            class="search-input flex-grow-1 border-0"
+            
+            placeholder="Find your location..."
+          />
+          <button class="search-button border-0 text-white">Find</button>
+        </div>
+        <div class="container py-5">
+          <div class="row weather-container">
+            <div class="col-lg-4 col-sm-12 weather-day position-relative">
+              <div
+                class="weather-header position-absolute start-0 end-0 top-0 d-flex justify-content-between"
+              >
+                <span class="day day-sec-1 text-secondary">Tuesday</span>
+                <span class="date date-sec-1 text-secondary">25june</span>
+              </div>
+              <div class="weather-content">
+                <div class="cety mt-5">
+                  <h6 class="text-secondary city-name pt-4 px-3">cairo</h6>
+                </div>
+                <div class="temperature">
+                  <h1 class="temp-sec">16.6 <span>°C</span></h1>
+                </div>
+                <div class="weather-icon">
+                  <img
+                    src="./assets/images/113.webp"
+                    alt="clear"
+                    class="w-25 weather-icon-1"
+                  />
+                  
+                </div>
+                <p class="px-3 clear">clear</p>
+                <div class="weather-detailes d-flex px-3 py-2">
+                  <p class="pe-3 text-white">
+                    <img
+                      src="./assets/images/icon-umberella.png"
+                      alt=""
+                      class="pe-2"
+                    />20%
+                  </p>
+                  <p class="pe-3 text-white">
+                    <img
+                      src="./assets/images/icon-wind.png"
+                      alt=""
+                      class="pe-2"
+                    />18km/h
+                  </p>
+                  <p class="pe-3 text-white">
+                    <img
+                      src="./assets/images/icon-compass.png"
+                      alt=""
+                      class="pe-2"
+                    />
+                    east
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 weather-day-1 position-relative">
+              <div
+                class="weather-header-1 position-absolute start-0 end-0 top-0 text-center"
+              >
+                <span class="day day-sec-2 text-secondary">wednesday</span>
+              </div>
+              <div
+                class="weather-content-1 position-absolute bottom-0 start-0 end-0 top-0 text-center"
+              >
+                <div class="weather-icon weather-icon-sec-2 mt-5 pt-5">
+                  <img src="./assets/images/176.webp" alt="clear" class="" />
+                </div>
+                <div class="temperature mt-4">
+                  <h4 class="text-white sec-2-temp-high">24.2 <span>°C</span></h4>
+                </div>
+                <div class="temperature-low mb-4">
+                  <h6 class="text-white sec-2-temp-low">24.2°C</h6>
+                </div>
+                <div class="weather-status weather-status-1">
+                  <p>clear</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 weather-day-1 position-relative">
+              <div
+                class="weather-header-2 position-absolute start-0 end-0 top-0 text-center"
+              >
+                <span class="day day-sec-3 text-secondary">wednesday</span>
+              </div>
+              <div
+                class="weather-content position-absolute bottom-0 start-0 end-0 top-0 text-center"
+              >
+                <div class="weather-icon mt-5 pt-5 weather-icon-sec-3" >
+                  <img src="./assets/images/176.webp" alt="clear" class="" />
+                </div>
+                <div class="temperature mt-4">
+                  <h4 class="text-white sec-3-temp-high">24.2°C</h4>
+                </div>
+                <div class="temperature-low mb-4">
+                  <h6 class="text-white sec-3-temp-low">24.2°C</h6>
+                </div>
+                <div class="weather-status weather-status-2">
+                  <p >clear</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="foter py-5">
+      <div class="container">
+        <div class="row d-flex ">
+          <div class="search-container col-lg-6 d-flex align-items-center ms-4">
+            <input
+              type="text"
+              class="search-input flex-grow-1 border-0"
+              placeholder="Enter your email to subscribe..."
+            />
+            <button class="search-button border-0 text-white">subscribe</button>
+          </div>
+
+          <div class="col-lg-4 text-center mt-4">
+            <a href="" class=" rounded-5 icons-foter px-3"><i class="fa-brands fa-facebook-f "></i></a>
+            <a href="" class=" rounded-5 icons-foter "><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class=" rounded-5 icons-foter "><i class="fa-brands fa-google"></i></a>
+            <a href="" class=" rounded-5 icons-foter "><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
